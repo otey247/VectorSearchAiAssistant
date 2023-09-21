@@ -1,8 +1,8 @@
 #! /usr/bin/pwsh
 
 Param(
-    [parameter(Mandatory=$false)][string]$acrName="bydtochatgptcr",
-    [parameter(Mandatory=$false)][string]$acrResourceGroup="ms-byd-to-chatgpt",
+    [parameter(Mandatory=$false)][string]$acrName="cosmicbikes",
+    [parameter(Mandatory=$false)][string]$acrResourceGroup="cosmic",
     [parameter(Mandatory=$true)][string]$resourceGroup,
     [parameter(Mandatory=$true)][string]$location,
     [parameter(Mandatory=$true)][string]$subscription,
