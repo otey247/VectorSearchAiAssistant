@@ -1,10 +1,10 @@
 @description('Location where all resources will be deployed. This value defaults to the **East US** region.')
 @allowed([
   'southcentralus'
-  'eastus'
+  'eastus2'
   'westeurope'
 ])
-param location string = 'eastus'
+param location string = 'eastus2'
 
 @description('''
 Unique name for the deployed services below. Max length 15 characters, alphanumeric only:
@@ -69,8 +69,8 @@ var openAiSettings = {
 }
 
 var deployedRegion = {
-  'East US': {
-    armName: toLower('eastus')
+  'East US 2': {
+    armName: toLower('eastus2')
   }
   'South Central US': {
     armName: toLower('southcentralus')
